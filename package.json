@@ -1,0 +1,27 @@
+{
+  "name": "test",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "client": "npm start --prefix ../frontend",
+    "dev": "concurrently \"npm run start\" \"npm run client\""
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "axios": "^1.7.7",
+    "cookie-session": "^2.1.0",
+    "cors": "^2.8.5",
+    "express": "^4.21.1",
+    "mysql2": "^3.11.4",
+    "passport": "^0.7.0",
+    "passport-google-oauth20": "^2.0.0",
+    "react-router-dom": "^6.28.0"
+  },
+  "devDependencies": {
+    "concurrently": "^8.0.0"
+  },
+  "proxy": "http://localhost:8000"
+}
